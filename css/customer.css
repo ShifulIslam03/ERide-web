@@ -1,0 +1,327 @@
+.station-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.station-card {
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 16px;
+    background: #fafcfb;
+}
+.station-card h3 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+}
+.station-card p {
+    margin: 4px 0;
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+}
+.availability-count {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+
+.station-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.station-card-link:hover {
+    border-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+.vehicle-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    background: #fafcfb;
+}
+.vehicle-checkbox:hover {
+    border-color: var(--color-primary);
+}
+.vehicle-checkbox input {
+    margin-bottom: 4px;
+}
+.vehicle-checkbox small {
+    color: var(--color-text-muted);
+}
+
+/* ===== Home "RENT" tile ===== */
+.rent-tile {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-primary);
+    color: #06231a;
+    border-radius: 14px;
+    padding: 22px 34px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.rent-tile:hover {
+    background: var(--color-primary-dark);
+    color: #fff;
+    text-decoration: none;
+}
+.rent-tile svg {
+    width: 90px;
+    height: auto;
+}
+
+/* ===== Vehicle catalog ===== */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+}
+.catalog-card {
+    position: relative;
+    background: var(--color-card);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 16px;
+    text-align: center;
+}
+.catalog-thumb {
+    background: #eef1f3;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+}
+.catalog-thumb-img {
+    width: 100%;
+    height: 90px;
+}
+.catalog-thumb-img {
+    object-fit: contain;
+}
+.catalog-card h3 {
+    margin: 6px 0 2px;
+    font-size: 1rem;
+}
+.catalog-meta {
+    color: var(--color-text-muted);
+    font-size: 0.82rem;
+    margin: 0 0 10px;
+}
+.catalog-actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.btn-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.details-popover {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background: var(--color-primary-light);
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    z-index: 5;
+}
+.details-popover.open {
+    display: block;
+}
+.details-popover strong {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #06231a;
+    border-radius: 6px;
+    padding: 2px 10px;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+.details-popover ol {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.85rem;
+}
+
+
+.ride-controls-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-end;
+}
+.ride-inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px;
+}
+.ride-control {
+    margin-bottom: 0;
+    min-width: 160px;
+}
+.station-table-wrap {
+    display: none;
+    margin-top: 14px;
+}
+.station-table-wrap.open {
+    display: block;
+}
+#stationTable tr.row-selected {
+    background: #bfe3f5;
+}
+.row-marker {
+    width: 18px;
+}
+.guidance-box {
+    margin-top: 22px;
+    font-size: 0.88rem;
+    color: var(--color-text);
+}
+.guidance-box ol {
+    margin: 6px 0 0 18px;
+    padding: 0;
+}
+
+
+.fare-banner {
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+}
+.method-tabs {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.method-tab-label {
+    background: var(--color-primary);
+    color: #06231a;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+.method-radio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.payment-columns {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+.card-visual {
+    background: var(--color-primary);
+    color: #06231a;
+    border-radius: 14px;
+    padding: 20px;
+    width: 280px;
+    flex-shrink: 0;
+}
+.card-visual-brand {
+    text-align: right;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+.card-visual label {
+    display: block;
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+.card-number-display {
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.card-number-display.small {
+    font-size: 0.9rem;
+}
+.card-visual-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.personal-info {
+    flex: 1;
+    min-width: 260px;
+}
+.personal-info h3 {
+    margin-top: 0;
+}
+.personal-info .form-group input {
+    background: #e9eaec;
+    border: none;
+}
+.btn-pay {
+    display: block;
+    margin: 24px auto 0;
+    background: var(--color-secondary);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-pay:hover {
+    background: #1d4ed8;
+}
+.saved-method-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #e9eaec;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    max-width: 420px;
+}
+.bkash-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: #e2136e;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.field-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}

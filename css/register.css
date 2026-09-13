@@ -1,0 +1,21 @@
+.auth-card-wide {
+    max-width: 620px;
+}
+.auth-card-wide .form-group {
+    max-width: 100%;
+}
+
+.field-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+}
+.field-grid .form-group.full {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 560px) {
+    .field-grid {
+        grid-template-columns: 1fr;
+    }
+}

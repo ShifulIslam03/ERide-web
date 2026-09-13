@@ -1,0 +1,122 @@
+body {
+    background: var(--color-page-bg);
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 40px;
+}
+
+.auth-card {
+    background: var(--color-card);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 36px 44px 30px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.auth-card h1 {
+    font-size: 1.4rem;
+    margin: 0 0 4px;
+    text-align: center;
+    color: #10151a;
+}
+.auth-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+}
+
+.auth-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.auth-row .form-group {
+    flex: 1;
+}
+
+.auth-card .form-group {
+    max-width: 100%;
+}
+
+.phone-input-group {
+    display: flex;
+}
+.phone-prefix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5e7eb;
+    border: 1px solid var(--color-border);
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    padding: 0 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    white-space: nowrap;
+}
+.phone-input-group input {
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.password-input-group {
+    position: relative;
+}
+.password-input-group input {
+    padding-right: 40px !important;
+}
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    padding: 0;
+}
+
+.role-select-group {
+    min-width: 130px;
+}
+.role-select-group label {
+    font-size: 0.85rem;
+}
+.role-select-group select {
+    background: #e9eaec;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 9px 10px;
+}
+
+.auth-card button[type="submit"] {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+    font-size: 0.88rem;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 0.9rem;
+    color: #10151a;
+}
+.auth-switch a {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+}

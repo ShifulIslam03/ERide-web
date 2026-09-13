@@ -1,0 +1,38 @@
+.stat-box .stat-value {
+    color: var(--color-secondary);
+}
+
+
+.station-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.station-switch a.active {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+/* ===== Add bikes by predefined bike type ===== */
+.fleet-thumb-img {
+    width: 56px;
+    height: 40px;
+    object-fit: contain;
+    background: #eef1f3;
+    border-radius: 6px;
+    padding: 2px;
+}
+.bike-type-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.bike-type-form .form-group {
+    margin-bottom: 0;
+    min-width: 220px;
+}
+.bike-type-form #bikeTypeQuantity {
+    max-width: 120px;
+}

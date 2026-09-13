@@ -1,8 +1,7 @@
 <?php
 session_start();
 
-// If the user is already logged in, skip the landing page and go straight to
-// their dashboard - same behavior the project had before this landing page.
+
 if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']) {
     $role = strtolower($_SESSION['role']);
     header("Location: view/$role/dashboard.php");

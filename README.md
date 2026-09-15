@@ -1,14 +1,14 @@
 # E-Ride Services - Eco-friendly E-Bike Rental Platform
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 **E-Ride Services** is a web-based platform designed to provide a smart, affordable, and eco-friendly transportation solution using e-bikes and scooters. This application targets students and office workers in urban areas like **Bashundhara R/A, Dhaka**. 
 
-The system allows users to rent electric vehicles from designated stations, track their ride time, and pay a transparent fare (**2 Taka per minute with a minimum charge of 3 Taka**). The platform is managed through a centralized web interface with three distinct roles: **Rider (Customer), Station Manager, and System Admin**.
+The system allows users to rent electric vehicles from designated stations, track their ride time, and pay a transparent fare (**2 Taka per minute with a minimum charge of 3 Taka**). The platform is managed through a centralized web interface with three distinct roles: **Rider (Customer), Manager, and System Admin**.
 
 ---
 
@@ -22,45 +22,45 @@ E-Ride Services solves this by offering a self-driven, short-distance (last-mile
 ## 👥 Team Members
 | SL | Student ID | Name | Role |
 | :---: | :---: | :--- | :--- |
-| 1 | 23-55311-3 | ANJAN SARKER | Group Leader |
-| 2 | 23-55198-3 | TAMAL SUTRADHAR | Member |
-| 3 | 23-55285-3 | MD. SHIFUL ISLAM | Member |
+| 1 | 23-55285-3 | MD. SHIFUL ISLAM | Member |
+| 2 | 23-55311-3 | ANJAN SARKER | Member |
+| 3 | 23-55198-3 | TAMAL SUTRADHAR | Member |
+
 
 ---
 
 ## ✨ Key Features
 
 ### 🔐 Common Features (All Users)
-*   **Authentication:** Secure Login, Logout, and Registration.
-*   **Account Management:** Change/Reset Password, Manage Profile (View, Edit).
-*   **Dashboard:** Personalized dashboard access after login.
+*   **Authentication & Security:** Secure Registration, Login, Logout, Session Management, and Role-based Access Control (RBAC).
+*   **Profile Management:** View, Edit, Update Profile, Change Password, and Delete Account (Customer).
+*   **Dashboard:** Personalized dashboards for Customers, Managers, and Admins.
 
 ### 👤 Customer Features
-*   **Book an E-Bike:** Browse available bikes at nearby stations.
-*   **Start and Complete a Ride:** Seamless ride initiation and end process.
-*   **Make Ride Payment:** Secure payment checkout (Card/Bkash) based on time and distance.
+*   **Bike Discovery & Booking:** View available E-Bikes, bike types, details, select pickup station, and book/cancel bookings.
+*   **Ride Management:** Start a ride (with or without prior booking), select end station, complete ride, and track ride history.
+*   **Automated Calculations:** Automatic Ride Fare and Duration calculation based on time.
+*   **Payments:** Secure checkout with Card or bKash, Transaction ID generation, and payment status tracking.
 
-### 🏢 Station Manager Features
-*   **Update Station Information:** Manage station details and capacity.
-*   **Manage Vehicles:** Add, remove, or relocate bikes within the station.
-*   **Monitor Availability:** Real-time tracking of available bikes.
+### 👨‍💼 Manager Features
+*   **Station Operations:** View and update assigned station information, monitor station capacity, and real-time availability.
+*   **Vehicle/Fleet Management:** Add, edit, delete, and change vehicle status (Available, Booked, In-Ride, Maintenance).
+*   **Fleet Logistics:** Transfer/move vehicles from one station to another seamlessly.
 
 ### 🛡️ Admin Features
-*   **Manage User Accounts and Roles:** Approve manager requests, assign roles.
-*   **Manage the Entire E-Ride System:** Overview of all stations, users, and vehicles.
-*   **Monitor Payments and Transactions:** Full financial overview of the platform.
+*   **User & Role Management:** View all users, delete accounts, and change roles (Customer, Manager, Admin).
+*   **Request Management:** Review, approve, or reject Manager role requests.
+*   **System & Station Management:** Add, edit, or deactivate stations, and assign managers to specific stations.
+*   **Financial Monitoring:** View payments, monitor transactions, and update transaction statuses.
 
 ---
 
 ## 🗄️ System Design & Architecture
 
 ### Database ER Diagram
-*(Upload your ER Diagram image from the Word file to the `screenshots/` folder and name it `er-diagram.png`)*
 > ![ER Diagram](screenshots/er-diagram.png)
-*(If you haven't uploaded the image yet, you can remove this image tag or upload it later)*
 
 ### UI/UX Design (Use Case Diagram)
-*(Upload your Use Case image from the Word file to the `screenshots/` folder and name it `use-case.png`)*
 > ![Use Case Diagram](screenshots/use-case.png)
 
 ---
@@ -87,9 +87,9 @@ E-Ride Services solves this by offering a self-driven, short-distance (last-mile
 
 </details>
 
-### 🏢 Station Manager Panel
+### 👨‍💼 Manager Panel
 <details>
-<summary><b>Click to expand Station Manager Panel Screenshots</b></summary>
+<summary><b>Click to expand Manager Panel Screenshots</b></summary>
 <br>
 
 | Manager Dashboard | Manage Bikes |
@@ -116,7 +116,7 @@ E-Ride Services solves this by offering a self-driven, short-distance (last-mile
 ---
 
 ## 🛠️ Technologies Used
-*   **Frontend:** HTML5, CSS3, JavaScript
+*   **Frontend:** HTML, CSS, JavaScript
 *   **Backend:** PHP
 *   **Database:** MySQL
 *   **Local Server:** XAMPP
